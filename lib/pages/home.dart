@@ -46,10 +46,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.pushNamed(context, '/page1');
                 },
-                child: const Text('Page1')),
+                child: const Text('Containers')),
             OutlinedButton(onPressed: () {
                Navigator.pushNamed(context, '/page2');
-            }, child: const Text('Page2')),
+            }, child: const Text('Cards')),
             OutlinedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/buttons');

@@ -123,6 +123,25 @@ class _IdealSourceForButtonsState extends State<IdealSourceForButtons>
               Icon(Icons.format_underline),
             ],
           ),
+          const SizedBox(height: 16),
+          const Text('Floating Action Buttons'),
+          const SizedBox(height: 12),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              FloatingActionButton(
+                onPressed: () {},
+                //tooltip: 'Floating Action Button',
+                child: const Icon(Icons.add),
+              ),
+              const SizedBox(width: 12),
+              FloatingActionButton.extended(
+                icon: const Icon(Icons.add),
+                label: const Text('Floating Action Button'),
+                onPressed: () {},
+              ),
+            ],
+          ),
         ],
       ),
     );
